@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header"/>
+<body>
+
+<div class="container">
+    <div th:replace="fragments/homeButton :: homeButton"/>
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>영어</th>
+                <th>뜻</th>
+
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr th:each="wordNote : ${wordNote}">
+                <td th:text="${wordNote.id}"></td>
+                <td th:text="${wordNote.english}"></td>
+                <td>
+                    <input>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <div th:replace="fragments/footer :: footer"/>
+</div> <!-- /container -->
+</body>
+</html>

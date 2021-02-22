@@ -1,0 +1,2 @@
+com/jaryeong/wordNote/WordNoteApplicationTests.java
+ com.jaryeong.wordNote.WordNoteApplicationTests

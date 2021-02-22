@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header :: header">
+    <title>영어단어장</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+</head>
+
+<body>
+<div class="container">
+    <div>
+        <ul class="nav nav-pills pull-right">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+    <div class="jumbotron"><h1>단어장</h1>
+        <p class="lead">단어추가 기능</p>
+        <p>
+            <a class="btn btn-lg btn-info" href="/wordNote/new">단어 등록</a>
+            <a class="btn btn-lg btn-info" href="/wordNote">단어 목록</a></p>
+        <p class="lead">시험 기능</p>
+        <p>
+            <a class="btn btn-lg btn-info" href="/testEnglish">영어스펠링 적기</a>
+            <a class="btn btn-lg btn-info" href="/testKorean">단어 뜻 적기</a></p>
+
+
+    </div>
+</div>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>
